@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Dg from "@/assets/icons/dg.svg";
+import Dg from "@/assets/icons/DH.svg";
 export default {
   name: "dogHeroPoints",
   data() {

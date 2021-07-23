@@ -19,14 +19,15 @@
       </div>
     </a-card>
     <div class="footer__card">
-      <span>Suba de nivel com mais 350 pontos.</span>
+      <img style="width:100%;" :src="icon" alt="" />
     </div>
   </div>
 </template>
 
 <script>
-import avatar from "../../assets/icons/avatar.svg";
+import avatar from "../../assets/icons/Group.svg";
 import arrow from "../../assets/icons/arrow_right.svg";
+import fire from "../../assets/icons/fire.svg";
 
 export default {
   name: "CardClient",
@@ -34,6 +35,7 @@ export default {
     return {
       avatarIcon: avatar,
       arrowIcon: arrow,
+      icon: fire,
     };
   },
   methods: {
@@ -99,13 +101,7 @@ export default {
 .footer__card {
   display: flex;
   background-color: #f8f8f8;
-  width: 100%;
-  height: 2rem;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1rem;
-  border-radius: 0 0 0.6rem 0.6rem;
+  width: 19.75rem;
   justify-content: center;
   align-items: center;
 }

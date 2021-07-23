@@ -35,13 +35,13 @@
 </template>
 
 <script>
-import Points from "@/assets/icons/pointsGroup.png";
+import Points from "@/assets/icons/PointGroup.svg";
 import ArrowD from "@/assets/icons/arrowD.svg";
 import LevelOne from "../components/beneficits/levelOne.vue";
 import LevelTwo from "../components/beneficits/levelTwo.vue";
 import LevelTree from "../components/beneficits/levelTree.vue";
 import LevelFour from "../components/beneficits/levelFour.vue";
-import LevelFive from "../components/beneficits/levelFive.vue";
+import LevelFive from "../components/beneficits/levelFive";
 import AboutPoints from "../components/beneficits/aboutPoints.vue";
 
 export default {

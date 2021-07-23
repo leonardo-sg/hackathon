@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Dog from "@/assets/icons/Dogg.svg";
+import Dog from "@/assets/icons/DogHelth.svg";
 export default {
   name: "helthPet",
   data() {

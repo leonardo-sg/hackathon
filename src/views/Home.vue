@@ -6,8 +6,8 @@
     <br />
     <div class="benefits__card">
       <span>Beneficios deste nível</span>
+      <img :src="icon" alt="" />
     </div>
-    <br />
     <div class="new__delivery">
       <NewDelivery />
       <NewDeliveryTwo />
@@ -36,6 +36,7 @@ import NewDeliveryTwo from "../components/client/newDeliveryTwo.vue";
 import HelthPoints from "../components/cardPoints/helthPoints.vue";
 import DogHeroPoints from "../components/cardPoints/dogHeroPoints.vue";
 import VaccinePoints from "../components/cardPoints/vaccinePoints.vue";
+import Group from "../assets/icons/GroupVantage.svg";
 
 export default {
   name: "Home",
@@ -46,6 +47,11 @@ export default {
     HelthPoints,
     DogHeroPoints,
     VaccinePoints,
+  },
+  data() {
+    return {
+      icon: Group,
+    };
   },
 };
 </script>
@@ -64,9 +70,7 @@ export default {
     margin-top: 1rem;
   }
   .benefits__card {
-    background-color: #c4c4c4;
     width: 90%;
-    height: 7.063rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +78,8 @@ export default {
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
+    display: flex;
+    flex-direction: column;
 
     color: #000000;
   }

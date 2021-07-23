@@ -47,12 +47,11 @@
 
 <script>
 import Dot from "@/assets/icons/dotPurple.svg";
-import check from "@/assets/icons/levelFour.svg";
+
 export default {
   data() {
     return {
       icon: Dot,
-      iconCheck: check,
     };
   },
 };
