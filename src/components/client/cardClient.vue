@@ -10,7 +10,7 @@
             Você está no
           </span>
           <span class="avatar__content">
-            Nivel 1
+            Puppy
           </span>
         </div>
         <div>

@@ -1,36 +1,40 @@
 <template>
   <div class="card__shape">
     <div class="header__card">
-      <span class="title__card">Nível 3</span>
-      <img class="icon__point" :src="iconCheck" alt="" />
+      <span class="title__card">Adult</span>
+      <span class="points" style="color:#ffffff;">1000 Pts</span>
     </div>
     <div class="body__card">
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span>Lorem ipsum dolor sit amet </span>
+        <span class="sub__title">Desconto em serviços</span>
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span>Consectetur adipiscing elit</span>
+        <span class="sub__title" style="color:#FF8B53;"
+          ><b>Brindes exclusivos</b></span
+        >
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span>Praesent id tincidunt augue</span>
+        <span class="sub__title">Benefícios em assinatura </span>
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span>Nullam suscipit a nisi</span>
+        <span class="sub__title" style="color:#FF8B53;"
+          ><b>Mais desconto em produtos selecionados</b>
+        </span>
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span><b>Donec at congue magna</b></span>
+        <span class="sub__title">Várias formas de pagamento</span>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Dot from "@/assets/icons/dotRed.svg";
+import Dot from "@/assets/icons/dotOrange.svg";
 import check from "@/assets/icons/levelTree.svg";
 export default {
   data() {
@@ -43,6 +47,14 @@ export default {
 </script>
 
 <style scoped>
+.sub__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+  text-align: initial;
+}
 .title__card {
   font-style: normal;
   font-weight: 600;
@@ -66,7 +78,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #e24457;
+  background-color: #ff8b53;
 }
 .title__line {
   display: flex;

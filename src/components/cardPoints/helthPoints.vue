@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Dog from "@/assets/icons/dog.svg";
+import Dog from "@/assets/icons/Dogg.svg";
 export default {
   name: "helthPet",
   data() {
@@ -70,6 +70,13 @@ export default {
   height: 40px;
   background: #582d89;
   margin: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #ffffff;
 }
 
 .image {

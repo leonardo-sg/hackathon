@@ -1,14 +1,14 @@
 <template>
   <div class="card__shape">
     <div class="header__card">
-      <span class="title__card">Senior</span>
-      <span class="points" style="color:#ffffff;">2500 Pts</span>
+      <span class="title__card">Life</span>
+      <span class="points">4500 Pts</span>
     </div>
     <div class="body__card">
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span class="sub__title" style="color:#F24783;"
-          ><b>Frete grátis em compras a partir de R$150</b>
+        <span class="sub__title" style="color:#582D89;"
+          ><b>Frete grátis em compras a partir de R$120</b>
         </span>
       </div>
       <div class="title__line">
@@ -17,7 +17,7 @@
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span class="sub__title" style="color:#F24783;"
+        <span class="sub__title" style="color:#582D89;"
           ><b>Brindes exclusivos</b></span
         >
       </div>
@@ -27,8 +27,14 @@
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span class="sub__title" style="color:#F24783;"
+        <span class="sub__title" style="color:#582D89;"
           ><b>Mais desconto em produtos selecionados</b>
+        </span>
+      </div>
+      <div class="title__line">
+        <img class="img__title" :src="icon" alt="" />
+        <span class="sub__title" style="color:#582D89;"
+          ><b>Atendimento preferencial</b>
         </span>
       </div>
       <div class="title__line">
@@ -40,10 +46,9 @@
 </template>
 
 <script>
-import Dot from "@/assets/icons/dotSenior.svg";
+import Dot from "@/assets/icons/dotPurple.svg";
 import check from "@/assets/icons/levelFour.svg";
 export default {
-  name: "levelTwo",
   data() {
     return {
       icon: Dot,
@@ -85,7 +90,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #f24783;
+  background-color: #582d89;
 }
 .title__line {
   display: flex;
@@ -96,5 +101,9 @@ export default {
 }
 .body__card {
   padding: 1rem;
+}
+
+.points {
+  color: #ffffff;
 }
 </style>

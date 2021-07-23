@@ -17,6 +17,9 @@
         </div>
       </div>
     </div>
+    <div class="about__text">
+      <AboutPoints />
+    </div>
     <div class="card__points">
       <LevelOne />
       <br />
@@ -25,6 +28,8 @@
       <LevelTree />
       <br />
       <LevelFour />
+      <br />
+      <LevelFive />
     </div>
   </div>
 </template>
@@ -36,10 +41,19 @@ import LevelOne from "../components/beneficits/levelOne.vue";
 import LevelTwo from "../components/beneficits/levelTwo.vue";
 import LevelTree from "../components/beneficits/levelTree.vue";
 import LevelFour from "../components/beneficits/levelFour.vue";
+import LevelFive from "../components/beneficits/levelFive.vue";
+import AboutPoints from "../components/beneficits/aboutPoints.vue";
 
 export default {
   name: "About",
-  components: { LevelOne, LevelTwo, LevelTree, LevelFour },
+  components: {
+    LevelOne,
+    LevelTwo,
+    LevelTree,
+    LevelFour,
+    LevelFive,
+    AboutPoints,
+  },
   data() {
     return {
       icon: Points,
@@ -50,6 +64,10 @@ export default {
 </script>
 
 <style scoped>
+.about__text {
+  width: 100%;
+  padding: 1rem;
+}
 .points__section {
   background-color: #ffffff;
   padding: 2rem;

@@ -1,25 +1,27 @@
 <template>
   <div class="card__shape">
     <div class="header__card">
-      <span class="title__card">Nível 3</span>
-      <img class="icon__point" :src="iconCheck" alt="" />
+      <span class="title__card">Young</span>
+      <span class="points" style="color:#ffffff;">300 Pts</span>
     </div>
     <div class="body__card">
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span>Lorem ipsum dolor sit amet </span>
+        <span class="sub__title">Desconto em serviços</span>
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span>Consectetur adipiscing elit</span>
+        <span class="sub__title" style="color:#28C291;"
+          ><b>Mais desconto em produtos selecionados</b>
+        </span>
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span>Praesent id tincidunt augue</span>
+        <span class="sub__title">Benefícios em assinatura</span>
       </div>
       <div class="title__line">
         <img class="img__title" :src="icon" alt="" />
-        <span><b>Nullam suscipit a nisi</b></span>
+        <span class="sub__title">Várias formas de pagamento</span>
       </div>
     </div>
   </div>
@@ -48,6 +50,14 @@ export default {
   color: #ffffff;
 }
 
+.sub__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+  text-align: initial;
+}
 .icon__point {
   width: 32px;
 }
